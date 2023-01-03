@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Grunt</title>
+    <link
+      rel="icon"
+      href="https://www.vivosmartphone.vn/themes/vivo/favicon.ico"
+    />
+    <meta name="title" content="" />
+    <meta name="description" content="" />
+    <meta property="og:locale" content="vi" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Trang chủ" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="stylesheet" href="dest/style.min.css" />
+    <link rel="stylesheet" href="dest/fonts.css" />
+    <link rel="stylesheet" href="dest/stylelibs.min.css" />
+  </head>
+  <body>
+    <section class="login">
+      <div class="login__left">1</div>
+      <div class="login__right">
+        <div class="content">
+          <img class="logo" src="" alt="logo" />
+          <h2 class="title">Đăng nhập</h2>
+          <div class="selectLogin">
+            <button data-tab-target="#user" class="loginButton active">
+              Đăng nhập bằng tài khoản
+            </button>
+            <button data-tab-target="#qrCode" class="loginButton">
+              Đăng nhập bằng mã QR
+            </button>
+          </div>
+          <form class="active" id="user" data-tab-content>
+            <div class="verticalInput">
+              <label for="userName">Nhập mã xác minh</label>
+              <input type="text" />
+            </div>
+            <div class="error">
+              <p class="errorText">
+                Tên đăng nhập/Email/Số điện thoại không đúng.
+              </p>
+            </div>
+            <div class="buttonSubmit">
+              <a href="/danhsachdonvi.html" class="btn btn-primary w100"
+                >Tiếp tục</a
+              >
+            </div>
+          </form>
+          <div class="qrCode" id="qrCode" data-tab-content>
+            <img src="./img/qrCode.jpeg" alt="qrCode" />
+            <p class="textQr">
+              Quét mã QR bằng Ứng dụng D-Signing để đăng nhập
+            </p>
+          </div>
+          <a class="textReg blueCl" href="/register.html">Chưa có tài khoản?</a>
+          <div class="socialButton">
+            <div class="item">Đăng ký bằng tài khoản Google</div>
+            <div class="item">Đăng ký bằng tài khoản Google</div>
+            <div class="item">Đăng ký bằng tài khoản Google</div>
+          </div>
+          <div class="buttonSubmit">
+            <a href="#">Trợ giúp</a>
+            <a href="#">Điều khoản dich vụ</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

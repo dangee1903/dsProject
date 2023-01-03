@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Grunt</title>
+    <link
+      rel="icon"
+      href="https://www.vivosmartphone.vn/themes/vivo/favicon.ico"
+    />
+    <meta name="title" content="" />
+    <meta name="description" content="" />
+    <meta property="og:locale" content="vi" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Trang chủ" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="stylesheet" href="dest/style.min.css" />
+    <link rel="stylesheet" href="dest/fonts.css" />
+    <link rel="stylesheet" href="dest/stylelibs.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="dest/button.min.css" />
+  </head>
+  <body>
+    <section class="danhsach">
+      <div class="danhsach__wrap">
+        <div class="left">
+          <div class="logo">
+            <div class="img">
+              <img src="" alt="logo" />
+            </div>
+          </div>
+          <ul>
+            <li class="active">
+              <i class="bi-alarm"></i><a href="#">Quản lý Đơn vị</a>
+            </li>
+            <li>
+              <i class="bi bi-house"></i> <a href="#">Quản lý Tài khoản</a>
+            </li>
+          </ul>
+        </div>
+        <div class="right">
+          <div class="pageName">
+            <h2 class="title">Danh sách Đơn vị</h2>
+            <div class="user">
+              Xin chào, &nbsp;<span class="bold">Nguyễn Hà</span>
+              <i class="bi bi-person-circle"></i>
+            </div>
+          </div>
+          <div class="pageContent">
+            <div class="company">
+              <p class="bold">
+                Tên Tổ chức:&nbsp;&nbsp;Dịch vụ Doanh nghiệp ECB
+              </p>
+            </div>
+            <div class="info">
+              <div class="userEmail">
+                <p>Người sở hữu::&nbsp;&nbsp;ngochongmai@gmail.com</p>
+              </div>
+              <i class="bi bi-pen modal-toggle"></i>
+              <div class="date">ngochongmai@gmail.com</div>
+            </div>
+          </div>
+          <div class="searchWrap">
+            <div class="search-box">
+              <input
+                type="text"
+                class="search-input"
+                placeholder="Tìm kiếm tên tài khoản, số điện thoại, email"
+              />
+              <button class="search-button">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+            <div class="addUser">
+              <button class="btn btn-outline-dark">Xuất Excel</button>
+              <button type="button" class="btn btn-primary modal-toggle1">
+                Thêm Đơn vị
+              </button>
+            </div>
+          </div>
+          <div class="tableWrap">
+            <div class="tableTitle">
+              <div class="listIcon">
+                <p>1 - 20 trong số 120</p>
+                <i class="bi bi-arrow-bar-left"></i>
+                <i class="bi bi-arrow-bar-right"></i>
+                <i class="bi bi-three-dots-vertical"></i>
+              </div>
+            </div>
+            <div class="tbl-header">
+              <table cellpadding="0" cellspacing="0" border="0">
+                <thead>
+                  <tr>
+                    <th>Mã đơn vị</th>
+                    <th>Tên Đơn vị</th>
+                    <th>Loại Đơn vị</th>
+                    <th>Số Nhân viên</th>
+                    <th>Số Ứng dụng</th>
+                    <th>Người đại diện</th>
+                    <th>Hoạt động</th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+            <div class="tbl-content">
+              <table cellpadding="0" cellspacing="0" border="0">
+                <tbody>
+                  <tr>
+                    <td>0110198793</td>
+                    <td>Công ty TNHH Thương mại và Tư v...</td>
+                    <td>Doanh nghiệp</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>Phạm Ngọc Thái</td>
+                    <td class="action">
+                      <i class="bi bi-pencil"></i> <i class="bi bi-pencil"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>0110198793</td>
+                    <td>Công ty TNHH Thương mại và Tư v...</td>
+                    <td>Doanh nghiệp</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>Phạm Ngọc Thái</td>
+                    <td class="action">
+                      <i class="bi bi-pencil"></i> <i class="bi bi-pencil"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>0110198793</td>
+                    <td>Công ty TNHH Thương mại và Tư v...</td>
+                    <td>Doanh nghiệp</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>Phạm Ngọc Thái</td>
+                    <td class="action">
+                      <i class="bi bi-pencil"></i> <i class="bi bi-pencil"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>0110198793</td>
+                    <td>Công ty TNHH Thương mại và Tư v...</td>
+                    <td>Doanh nghiệp</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>Phạm Ngọc Thái</td>
+                    <td class="action">
+                      <i class="bi bi-pencil"></i> <i class="bi bi-pencil"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>0110198793</td>
+                    <td>Công ty TNHH Thương mại và Tư v...</td>
+                    <td>Doanh nghiệp</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>Phạm Ngọc Thái</td>
+                    <td class="action">
+                      <i class="bi bi-pencil"></i> <i class="bi bi-pencil"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>0110198793</td>
+                    <td>Công ty TNHH Thương mại và Tư v...</td>
+                    <td>Doanh nghiệp</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>Phạm Ngọc Thái</td>
+                    <td class="action">
+                      <i class="bi bi-pencil"></i> <i class="bi bi-pencil"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>0110198793</td>
+                    <td>Công ty TNHH Thương mại và Tư v...</td>
+                    <td>Doanh nghiệp</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>Phạm Ngọc Thái</td>
+                    <td class="action">
+                      <i class="bi bi-pencil"></i> <i class="bi bi-pencil"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>0110198793</td>
+                    <td>Công ty TNHH Thương mại và Tư v...</td>
+                    <td>Doanh nghiệp</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>Phạm Ngọc Thái</td>
+                    <td class="action">
+                      <i class="bi bi-pencil"></i> <i class="bi bi-pencil"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>0110198793</td>
+                    <td>Công ty TNHH Thương mại và Tư v...</td>
+                    <td>Doanh nghiệp</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>Phạm Ngọc Thái</td>
+                    <td class="action">
+                      <i class="bi bi-pencil"></i> <i class="bi bi-pencil"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>0110198793</td>
+                    <td>Công ty TNHH Thương mại và Tư v...</td>
+                    <td>Doanh nghiệp</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>Phạm Ngọc Thái</td>
+                    <td class="action">
+                      <i class="bi bi-pencil"></i> <i class="bi bi-pencil"></i>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>0110198793</td>
+                    <td>Công ty TNHH Thương mại và Tư v...</td>
+                    <td>Doanh nghiệp</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>Phạm Ngọc Thái</td>
+                    <td class="action">
+                      <i class="bi bi-pencil"></i> <i class="bi bi-pencil"></i>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div
+      class="modal"
+      role="dialog"
+      aria-labelledby="modal__label"
+      aria-modal="true"
+    >
+      <div class="modal__body">
+        <h1 id="modal__label" tabindex="-1">Chỉnh sửa thông tin Tổ chức</h1>
+        <form action="" novalidate>
+          <div class="verticalInput">
+            <label for="userName">Tên Tổ chức:</label>
+            <input type="text" />
+          </div>
+          <div class="verticalInput">
+            <label for="userName">Người sở hữu:</label>
+            <input type="text" />
+          </div>
+          <div class="buttonSubmit mt30">
+            <a href="#" class="blueCl">Hủy</a>
+            <button type="button" class="btn btn-primary">Xác nhận</button>
+          </div>
+        </form>
+        <button class="modal__close">x</button>
+      </div>
+      <div class="modal__overlay"></div>
+    </div>
+    <div
+      class="modal1"
+      role="dialog"
+      aria-labelledby="modal__label"
+      aria-modal="true"
+    >
+      <div class="modal__body modal__body1">
+        <h1 id="modal__label1" tabindex="-1">Thêm Đơn vị</h1>
+        <p>Thông tin Đơn vị</p>
+        <form action="" novalidate>
+          <div class="horizontalInput">
+            <div class="inputLeft">
+              <label>Loại đơn vị:</label>
+              <select>
+                <option value="0">Select car:</option>
+                <option value="1">Audi</option>
+              </select>
+            </div>
+            <div class="inputRight">
+              <label>
+                <div class="inputLeft">
+                  <label>Mã đơn vị: *</label>
+                </div></label
+              >
+              <input type="text" />
+            </div>
+          </div>
+          <div class="horizontalInput">
+            <div class="inputLeft w100">
+              <label>Tên đơn vị: *</label>
+              <input type="text" />
+            </div>
+          </div>
+          <div class="horizontalInput">
+            <div class="inputLeft">
+              <label>Đại diện pháp luật:</label>
+              <input type="text" />
+            </div>
+            <div class="inputRight">
+              <label>
+                <div class="inputLeft">
+                  <label>Chức vụ: *</label>
+                </div></label
+              >
+              <input type="text" />
+            </div>
+          </div>
+          <div class="horizontalInput">
+            <div class="inputLeft">
+              <label>Người quản lý:</label>
+              <select>
+                <option value="0">Select car:</option>
+                <option value="1">Audi</option>
+              </select>
+            </div>
+          </div>
+          <p class="bold">Thông tin liên hệ</p>
+          <div class="horizontalInput">
+            <div class="inputLeft">
+              <label>Đại diện pháp luật:</label>
+              <input type="text" />
+            </div>
+            <div class="inputRight">
+              <label>
+                <div class="inputLeft">
+                  <label>Chức vụ: *</label>
+                </div></label
+              >
+              <input type="text" />
+            </div>
+          </div>
+          <div class="horizontalInput">
+            <div class="inputLeft">
+              <label>Đại diện pháp luật:</label>
+              <input type="text" />
+            </div>
+          </div>
+          <div class="buttonSubmitFrom">
+            <button class="btn bold">Hủy</button>
+            <button class="btn btn-primary">Lưu</button>
+          </div>
+        </form>
+        <button class="modal__close modal__close1">x</button>
+      </div>
+      <div class="modal__overlay modal__overlay1"></div>
+    </div>
+    <script type="text/javascript" src="dest/jsmain.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
