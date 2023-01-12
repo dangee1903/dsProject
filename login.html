@@ -25,50 +25,64 @@
   </head>
   <body>
     <section class="login">
-      <div class="login__left">1</div>
-      <div class="login__right">
-        <div class="content">
-          <img class="logo" src="" alt="logo" />
-          <h2 class="title">Đăng nhập</h2>
-          <div class="selectLogin">
-            <button data-tab-target="#user" class="loginButton active">
-              Đăng nhập bằng tài khoản
-            </button>
-            <button data-tab-target="#qrCode" class="loginButton">
-              Đăng nhập bằng mã QR
-            </button>
-          </div>
-          <form class="active" id="user" data-tab-content>
-            <div class="verticalInput">
-              <label for="userName">Nhập mã xác minh</label>
-              <input type="text" />
+      <div class="login__wrap">
+        <div class="login__wrap-left">
+          <img src="./img/background.jpg" alt="" />
+        </div>
+        <div class="login__wrap-right">
+          <div class="content">
+            <img class="logo" src="./img/logo.jpg" alt="logo" />
+            <h2 class="title">Đăng nhập</h2>
+            <div class="selectLogin">
+              <button data-tab-target="#user" class="loginButton active">
+                Đăng nhập bằng tài khoản
+              </button>
+              <button data-tab-target="#qrCode" class="loginButton">
+                Đăng nhập bằng mã QR
+              </button>
             </div>
-            <div class="error">
-              <p class="errorText">
-                Tên đăng nhập/Email/Số điện thoại không đúng.
+            <form class="active" id="user" data-tab-content>
+              <div class="verticalInput">
+                <label for="userName">Tên đăng nhập/Email/Số điện thoại</label>
+                <input type="text" />
+              </div>
+              <div class="error">
+                <p class="errorText">
+                  <i class="bi bi-exclamation-circle-fill"></i>
+                  Tên đăng nhập/Email/Số điện thoại không đúng.
+                </p>
+              </div>
+              <div class="buttonSubmit">
+                <a href="/group.html" class="btn btn-primary w100">Tiếp tục</a>
+              </div>
+            </form>
+            <div class="qrCode" id="qrCode" data-tab-content>
+              <img src="./img/qrCode.jpeg" alt="qrCode" />
+              <p class="textQr">
+                Quét mã QR bằng Ứng dụng D-Signing để đăng nhập
               </p>
             </div>
-            <div class="buttonSubmit">
-              <a href="/danhsachdonvi.html" class="btn btn-primary w100"
-                >Tiếp tục</a
-              >
+            <a class="textReg blueCl" href="/register.html"
+              >Chưa có tài khoản?</a
+            >
+            <div class="socialButton">
+              <div class="item">
+                <i><img src="./img/gmail.png" alt="" /></i>
+                <p>Đăng ký bằng tài khoản Google</p>
+              </div>
+              <div class="item">
+                <i><img src="./img/facebook.png" alt="" /></i>
+                <p>Đăng ký bằng tài khoản Facebook</p>
+              </div>
+              <div class="item">
+                <i><img src="./img/zalo.png" alt="" /></i>
+                <p>Đăng ký bằng tài khoản Zalo</p>
+              </div>
             </div>
-          </form>
-          <div class="qrCode" id="qrCode" data-tab-content>
-            <img src="./img/qrCode.jpeg" alt="qrCode" />
-            <p class="textQr">
-              Quét mã QR bằng Ứng dụng D-Signing để đăng nhập
-            </p>
-          </div>
-          <a class="textReg blueCl" href="/register.html">Chưa có tài khoản?</a>
-          <div class="socialButton">
-            <div class="item">Đăng ký bằng tài khoản Google</div>
-            <div class="item">Đăng ký bằng tài khoản Google</div>
-            <div class="item">Đăng ký bằng tài khoản Google</div>
-          </div>
-          <div class="buttonSubmit">
-            <a href="#">Trợ giúp</a>
-            <a href="#">Điều khoản dich vụ</a>
+            <div class="buttonSubmit">
+              <a href="#">Trợ giúp</a>
+              <a href="#">Điều khoản dich vụ</a>
+            </div>
           </div>
         </div>
       </div>

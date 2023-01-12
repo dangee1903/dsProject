@@ -76,6 +76,12 @@ const tabContents = document.querySelectorAll("[data-tab-content]");
 tabs.forEach((tab) => {
   tab.addEventListener("click", () => {
     const target = document.querySelector(tab.dataset.tabTarget);
+    const socialButton = document.querySelector(".socialButton");
+    if (target.id === "qrCode") {
+      socialButton.style.display = "none";
+    } else {
+      socialButton.style.display = "block";
+    }
     tabContents.forEach((tabContent) => {
       tabContent.classList.remove("active");
     });
