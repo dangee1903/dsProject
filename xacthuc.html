@@ -24,34 +24,50 @@
     <link rel="stylesheet" href="dest/stylelibs.min.css" />
   </head>
   <body>
-    <section class="xacthuc">
-      <div class="xacthuc__left">1</div>
-      <div class="xacthuc__right">
-        <div class="content">
-          <img class="logo" src="" alt="logo" />
-          <h2 class="title">Đăng ký tài khoản</h2>
-          <form>
-            <div class="verticalInput">
-              <label for="userName">Nhập mã xác minh</label>
-              <input type="text" />
+    <section class="login">
+      <div class="login__wrap">
+        <div class="login__wrap-left">
+          <img src="./img/background.jpg" alt="" />
+        </div>
+        <div class="login__wrap-right">
+          <div class="content">
+            <img class="logo" src="./img/logo.jpg" alt="logo" />
+            <h2 class="title">Đăng nhập</h2>
+            <div class="selectLogin">
+              <button data-tab-target="#user" class="loginButton active">
+                Đăng nhập bằng tài khoản
+              </button>
+              <button data-tab-target="#user" class="loginButton">
+                Đăng nhập bằng mã QR
+              </button>
             </div>
-            <div class="error">
-              <p class="errorText">Mã xác thực không chính xác.</p>
-            </div>
-
+            <form class="active" id="user" data-tab-content>
+              <div class="verticalInput">
+                <label for="userName">Nhập mã xác minh</label>
+                <input type="text" />
+              </div>
+              <div class="error">
+                <p class="errorText">
+                  <i class="bi bi-exclamation-circle-fill"></i>
+                  Mã xác thực không chính xác.
+                </p>
+              </div>
+              <div class="buttonSubmit">
+                <a href="./dsProject/login.html" class="blueCl bold">Trở lại</a>
+                <a href="./dsProject/group.html" class="blueButton">Xác nhận</a>
+              </div>
+            </form>
+            <a class="textReg blueCl" href="/register.html"
+              >Gửi lại mã xác minh</a
+            >
             <div class="buttonSubmit">
-              <a href="#" class="blueCl bold">Trở lại</a>
-              <button class="blueButton">Xác nhận</button>
+              <a href="#">Trợ giúp</a>
+              <a href="#">Điều khoản dich vụ</a>
             </div>
-          </form>
-          <div class="buttonSubmit">
-            <a href="#">Trợ giúp</a>
-            <a href="#">Điều khoản dich vụ</a>
           </div>
         </div>
       </div>
     </section>
-    <!-- <script type="text/javascript" src="dest/jsmain.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script> -->
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
